@@ -1,6 +1,8 @@
 var agentes = [];
 var agentesDisplay = [];
+var selectedRole = "Empty";
 let renderHTML = '';
+
 const roleSelected = document.querySelector(".catButton");
 
 const valoApiUrl = 'https://valorant-api.com/v1/agents?language=es-MX&isPlayableCharacter=true';
@@ -31,9 +33,17 @@ fetch(valoApiUrl)
 
 let filterByRole = (element) => {
     let role = element.dataset.agentRole;
+    
+    if (selectedRole == role) {
+        agentesDisplay = agentes;
+        selectedRole = "Empty";
+    } else {
+        agentesDisplay = agentes.filter((agent) => agent.role.displayName == role);
+        console.log(agentesDisplay);
+        selectedRole = role;
+    }
 
-    agentesDisplay = agentes.filter((agent) => agent.role.displayName == role);
-    console.log(agentesDisplay);
+   
     // renderiza agentes filtrados
     document.getElementById('content').innerHTML = renderAgents(agentesDisplay);;
 }
