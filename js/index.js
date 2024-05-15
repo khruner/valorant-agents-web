@@ -37,10 +37,17 @@ let filterByRole = (element) => {
     if (selectedRole == role) {
         agentesDisplay = agentes;
         selectedRole = "Empty";
+        element.classList.remove("selected");
     } else {
         agentesDisplay = agentes.filter((agent) => agent.role.displayName == role);
         console.log(agentesDisplay);
         selectedRole = role;
+        let buttons = document.getElementsByClassName("catButton");
+        for (let index = 0; index < buttons.length; index++) {
+            const button = buttons[index];
+            button.classList.remove("selected");
+        }
+        element.classList.add("selected");
     }
 
    

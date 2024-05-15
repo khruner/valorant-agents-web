@@ -8,16 +8,28 @@ var renderAgentCard = (agent) => {
         </div>
         <div class="agent-abilities">
             <div class="ability">
-                <img class="agent-ability-icon" src="${agent.abilities[0].displayIcon}">
+                <div class="tooltip">
+                    <img class="agent-ability-icon" src="${agent.abilities[0].displayIcon}">
+                    <span class="tooltiptext">${agent.abilities[0].displayName}</span>
+                </div>
             </div>
             <div class="ability">
-                <img class="agent-ability-icon" src="${agent.abilities[1].displayIcon}">
+                <div class="tooltip">
+                    <img class="agent-ability-icon" src="${agent.abilities[1].displayIcon}">
+                    <span class="tooltiptext">${agent.abilities[1].displayName}</span>
+                </div>
             </div>
             <div class="ability">
-                <img class="agent-ability-icon" src="${agent.abilities[2].displayIcon}">
+                <div class="tooltip">
+                    <img class="agent-ability-icon" src="${agent.abilities[2].displayIcon}">
+                    <span class="tooltiptext">${agent.abilities[2].displayName}</span>
+                </div>
             </div>
             <div class="ability">
-                <img class="agent-ability-icon" src="${agent.abilities[3].displayIcon}">
+                <div class="tooltip">
+                    <img class="agent-ability-icon" src="${agent.abilities[3].displayIcon}">
+                    <span class="tooltiptext">${agent.abilities[3].displayName}</span>
+                </div>
             </div>
         </div>
     </div>`;

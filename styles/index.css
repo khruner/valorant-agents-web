@@ -38,7 +38,7 @@ body {
 div.catSelector {
     height: 80vh;
     width: 75px;
-    background-color: grey;
+    background-color: #1F232677;
     margin-left: 16px;
     display: flex;
     flex-direction: column;
@@ -62,9 +62,15 @@ h1 {
     background-color: transparent;
     border: none;
 }
-.catButton:hover, .ability:hover {
+
+.catButton:hover , .selected {
     cursor: pointer;
     filter: invert(1);
+}
+
+.agent-ability-icon:hover {
+    cursor: pointer;
+    filter:invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
 }
 
 .catButton > img {
@@ -89,8 +95,11 @@ h1 {
     min-height: 400px;
     margin-right: 12px;
     margin-top: 26px;
-    background-color: #1F2326;
+    background-color: #1F2326aa;
     border: solid 1px transparent;
+}
+.agent-card:nth-child(-n + 4) {
+    margin-top: 0;
 }
 
 .agent-card .agent-portrait-background {
@@ -136,3 +145,29 @@ h1 {
     width: 50px;
     height: 50px;
 }
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  } 
