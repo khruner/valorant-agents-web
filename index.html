@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <title>Agentes</title>
+</head>
+
+<body>
+  <section>
+    <div class="title-container">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="35" viewBox="0 0 100 100" width="35"><path d="M99.25 48.66V10.28c0-.59-.75-.86-1.12-.39l-41.92 52.4a.627.627 0 00.49 1.02h30.29c.82 0 1.59-.37 2.1-1.01l9.57-11.96c.38-.48.59-1.07.59-1.68zM1.17 50.34L32.66 89.7c.51.64 1.28 1.01 2.1 1.01h30.29c.53 0 .82-.61.49-1.02L1.7 9.89c-.37-.46-1.12-.2-1.12.39v38.38c0 .61.21 1.2.59 1.68z" fill="#fff"></path></svg>
+      <h3 class="title">Valorant</h3>  
+    </div>
+    <div class="mainWrapper">
+      <div class="catSelector">
+        <button id="Initiator" class="btnInitiator catButton" data-agent-role="Iniciador">
+          <img src="https://media.valorant-api.com/agents/roles/1b47567f-8f7b-444b-aae3-b0c634622d10/displayicon.png"
+            alt="Iniciador">
+        </button>
+        <button id="Sentinel" class="btnCentinel catButton" data-agent-role="Centinela">
+          <img src="https://media.valorant-api.com/agents/roles/5fc02f99-4091-4486-a531-98459a3e95e9/displayicon.png"
+            alt="Centinela">
+        </button>
+        <button id="Duelist" class="btnDuelist catButton" data-agent-role="Duelista">
+          <img src="https://media.valorant-api.com/agents/roles/dbe8757e-9e92-4ed4-b39f-9dfc589691d4/displayicon.png"
+            alt="Duelista">
+        </button>
+        <button id="Controller" class="btnController catButton" data-agent-role="Controlador">
+          <img src="https://media.valorant-api.com/agents/roles/4ee40330-ecdd-4f2f-98a8-eb1243428373/displayicon.png"
+            alt="Controlador">
+        </button>
+      </div>
+      <div id="content" class="agents-gallery">
+      </div>
+    </div>
+  </section>
+  <script src="js/component/agent-card.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>

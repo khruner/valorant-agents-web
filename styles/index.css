@@ -1,0 +1,101 @@
+body {
+    background-color: black;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-image: url(../img/background.png);
+}
+
+.agents-gallery::-webkit-scrollbar {
+    width: 1em;
+}
+   
+.agents-gallery::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+   
+.agents-gallery::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+}
+
+.title-container {
+    padding-left: 16px;
+    display: flex;
+    align-items: baseline;
+}
+
+.title-container svg {
+    margin-left:18px;
+}
+
+.title {
+    margin-left: 16px;
+    color: white;
+    font-size: 32px;
+}
+
+div.catSelector {
+    height: 400px;
+    width: 75px;
+    background-color: grey;
+    margin-left: 16px;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+h1 {
+    color: black;
+
+}
+.mainWrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.catButton {
+    padding: 0;
+    border-radius: 25px;
+    background-color: transparent;
+    border: none;
+}
+
+.catButton > img {
+    width: 50px;
+    height: 50px;
+    background-color: transparent
+}
+
+.agents-gallery {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.agent-card {
+    display: block;
+    position: i;
+    width: 20vw;
+    height: 100%;
+}
+.agent-card .agent-portrait-background {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: auto;
+}
+.agent-card .agent-portrait div {
+    position: relative;
+}
+.agent-card .agent-portrait-bust {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: auto;
+    margin-top: 20%;
+}
