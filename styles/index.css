@@ -171,3 +171,20 @@ h1 {
   .tooltip:hover .tooltiptext {
     visibility: visible;
   } 
+
+/* media query para escritorios grandes (4k) */
+@media screen and (min-width: 1600px) {
+    .agent-card {
+        display: block;
+        width: 20vw;
+        min-height: 800px;
+        margin-right: 12px;
+        margin-top: 26px;
+        background-color: #1F2326aa;
+        border: solid 1px transparent;
+    }
+    
+    .agent-portrait {
+        min-height: 720px;
+    }
+}
